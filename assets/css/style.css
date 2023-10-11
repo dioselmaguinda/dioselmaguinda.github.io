@@ -718,6 +718,15 @@ section {
   font-size: 26px;
   color: #1d685f;
 }
+.about-me ul li:hover {
+  transform: scale(1.1); /* Enlarge the title on hover */
+  transition: transform 0.3s;
+}
+
+.about-me h4:hover, .about-me p:hover {
+  color: #FF5733; /* Change text color on hover */
+  transition: color 0.3s;
+}
 
 /* Define a keyframe animation named "bounce" */
 @keyframes bounce {
@@ -936,6 +945,7 @@ h2.mt-5 {
   color: #FF5733; /* Change text color on hover */
   transition: color 0.3s;
 }
+
 
 .resume-item ul li:hover {
   transform: scale(1.1); /* Enlarge the title on hover */
