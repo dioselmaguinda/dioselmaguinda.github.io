@@ -1,1 +1,1 @@
-# dioselmaguinda|website
+# dioselmaguinda|website.github.io
