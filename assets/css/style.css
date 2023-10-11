@@ -475,7 +475,7 @@ h6 {
 #hero .carousel-fade .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 #hero .carousel-fade .carousel-inner .carousel-item-next,
@@ -541,6 +541,8 @@ h2.animate__animated.animate__fadeInDown {
   text-align: center; /* Center-align the text */
   padding-bottom: 10px; /* Space between text and border */
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -697,11 +699,15 @@ section {
     opacity: 1; /* Full opacity at 50% */
   }
 }
-
-/* Apply the animation to the images */
-.col-lg-4 img {
-  animation: fadeInOut 8s ease-in-out infinite; /* Apply the "fadeInOut" animation with infinite looping */
+/* Add this CSS to your stylesheet */
+#featured-services .col-lg-4 img {
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
 }
+
+#featured-services .col-lg-4 img:hover {
+  transform: scale(1.1); /* Increase the scale on hover (zoom effect) */
+}
+
 
 
 /*--------------------------------------------------------------
@@ -737,6 +743,24 @@ h2.mt-5 {
 
 
 /* Add additional styles if needed */
+
+/* Scale the image on hover */
+.about-me .col-lg-4 img {
+  transition: transform 0.3s;
+}
+
+.about-me .col-lg-4 img:hover {
+  transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+/* Add a hover effect to the link */
+.about-me .section-title a i {
+  transition: transform 0.3s;
+}
+
+.about-me .section-title a:hover i {
+  transform: scale(1.2); /* Scale the icon in the link by 20% on hover */
+}
 
 
 .about-me .content ul {
@@ -902,6 +926,20 @@ h2.mt-5 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #222222;
+}
+
+.section-title h2:hover {
+  transform: scale(1.1); /* Enlarge the title on hover */
+  transition: transform 0.3s;
+}
+.resume-item h4:hover, .resume-item p:hover {
+  color: #FF5733; /* Change text color on hover */
+  transition: color 0.3s;
+}
+
+.resume-item ul li:hover {
+  transform: scale(1.1); /* Enlarge the title on hover */
+  transition: transform 0.3s;
 }
 
 
@@ -1288,6 +1326,15 @@ h3.mt-2 {
   }
 }
 
+.portfolio-wrap {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-wrap {
+  transform: scale(1.05);
+}
+
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1475,6 +1522,11 @@ h3.mt-2 {
   background: #fff;
   padding: 60px 0;
 }
+.section-header h3:hover {
+  transform: scale(1.1); /* Enlarge the title on hover */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
 
 #team .member {
   text-align: center;
@@ -1573,7 +1625,7 @@ h3.mt-2 {
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: white;
 }
 
 #contact .contact-info h3 {
@@ -1700,6 +1752,21 @@ h3.mt-2 {
     transform: rotate(360deg);
   }
 }
+
+
+  .contact-address,
+  .contact-phone,
+  .contact-email {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .contact-address:hover,
+  .contact-phone:hover,
+  .contact-email:hover {
+    transform: scale(1.1);
+  }
+
+
 
 /*--------------------------------------------------------------
 # Blog
